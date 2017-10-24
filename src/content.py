@@ -26,7 +26,7 @@ def getcontent():
       }
 
    try:
-      f = open('../datasource/10_23_2017_15_10.txt', 'r')
+      f = open('../datasource/10_23_2017_22_08.json', 'r')
    except IOError:
       return json.dumps({'message': 'no information for given date'}), 500
 
