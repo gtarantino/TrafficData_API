@@ -4,16 +4,15 @@
 curl -O http://207.251.86.229/nyc-links-cams/LinkSpeedQuery.txt
 
 CSVFILENAME=$(ls | grep *.txt)
-JSONFILENAME=$(TZ=America/New_York date -v -2M "+%m_%d_%Y_%H_%M.json")
 
 # Convert tabs to spaces
 vim ${CSVFILENAME} -s vimscript
 
 # Convert csv to JSON
-python3 convert_csv_to_json.py ${CSVFILENAME} ${JSONFILENAME}
+python3 convert_csv_to_json.py ${CSVFILENAME}
 
 # Move JSON file to datasource directoy
-mv ${JSONFILENAME} ../datasource/.
+mv *.json ../datasource/.
 
 # Clean up
 rm ${CSVFILENAME}
