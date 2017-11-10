@@ -28,7 +28,7 @@ def convert_file_to_json(csvFile):
             f.write("      \"" + borough + "\" : {\n")
             boroughData = getSubset(borough, data)
             for dataNdx, entry in enumerate(boroughData):
-               if borough == entry["Borough"]:
+               if borough == entry["Borough"] and float(entry["Speed"]) != 0.00:
                   key = validateKey(entry["linkName"])
                   f.write("         \"" + key + "\" : {\n")
 
