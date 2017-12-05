@@ -20,7 +20,7 @@ cd TrafficData_API/scripts
 ./fetchTrafficData
 ```
 
-After running, you will find the newly created JSON traffic data in the
+After the script runs, you will find the newly created JSON traffic data in the
 datasource directory. The file will be named `YYYY_MM_DD_HH_MM.json`. The time
 is in the 24 hr format. Currently you still have to manually merge the newly
 created JSON with the master file 'TrafficData.json' if you wish to use the
