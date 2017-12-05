@@ -25,3 +25,15 @@ datasource directory.
 ```
 cd TrafficData_API/datasource
 ```
+
+We also created a server to host the data locally. If you would like to use this
+feature, you need to go to the 'src' directory and run the local server. Here
+we used [Flask](http://flask.pocoo.org/) and Python3.
+
+```
+cd TrafficData_API/src
+python3 server.py
+```
+
+Once the server is up and running, hit the following route 'getTrafficData' to
+see the traffic data.
