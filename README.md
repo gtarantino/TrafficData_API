@@ -11,8 +11,8 @@ just follow the previous link.
 
 The data recieved from NYCDOT's TMC is provided in a CSV format. However, we
 wanted the data to be structured specifically in JSON. To accomplish this, we
-wrote our own script to retrieve, clean, and re-format the data. To run this
-script, you need to be in the `scripts` directory and run the fetch traffic
+wrote our own bash script to retrieve, clean, and re-format the data. To run
+this script, you need to be in the `scripts` directory and run the fetch traffic
 data command.
 
 ```
@@ -21,7 +21,11 @@ cd TrafficData_API/scripts
 ```
 
 After running, you will find the newly created JSON traffic data in the
-datasource directory.
+datasource directory. The file will be named 'YYYY_MM_DD_HH_MM.json'. The time
+is in the 24 hr format. Currently you still have to manually merge the newly
+created JSON with the master file 'TrafficData.json' if you wish to use the
+server feature explained below.
+
 ```
 cd TrafficData_API/datasource
 ```
