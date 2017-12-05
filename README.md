@@ -21,7 +21,7 @@ cd TrafficData_API/scripts
 ```
 
 After running, you will find the newly created JSON traffic data in the
-datasource directory. The file will be named 'YYYY_MM_DD_HH_MM.json'. The time
+datasource directory. The file will be named `YYYY_MM_DD_HH_MM.json`. The time
 is in the 24 hr format. Currently you still have to manually merge the newly
 created JSON with the master file 'TrafficData.json' if you wish to use the
 server feature explained below.
@@ -31,7 +31,7 @@ cd TrafficData_API/datasource
 ```
 
 We also created a server to host the data locally. If you would like to use this
-feature, you need to go to the 'src' directory and run the local server. Here
+feature, you need to go to the `src` directory and run the local server. Here
 we used [Flask](http://flask.pocoo.org/) and Python3.
 
 ```
@@ -39,5 +39,5 @@ cd TrafficData_API/src
 python3 server.py
 ```
 
-Once the server is up and running, hit the following route 'getTrafficData' to
+Once the server is up and running, hit the following route `getTrafficData` to
 see the traffic data.
