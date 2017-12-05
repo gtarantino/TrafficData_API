@@ -10,6 +10,6 @@ def getTrafficData():
    try:
       f = open('../datasource/TrafficData.json', 'r')
    except IOError:
-      return json.dumps({'message': 'no information for given date'}), 500
+      return json.dumps({'message': 'Sorry, no traffic data available'}), 500
 
    return json.dumps(json.load(f)), 200
