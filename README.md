@@ -3,8 +3,8 @@
 
 
 This project retrieves real-time New York traffic data from the following
-[source] (http://207.251.86.229/nyc-links-cams/LinkSpeedQuery.txt). We found
-this resource [here] (https://data.cityofnewyork.us/Transportation/Real-Time-Traffic-Speed-Data/xsat-x5sa)
+[source](http://207.251.86.229/nyc-links-cams/LinkSpeedQuery.txt). We found
+this resource [here](https://data.cityofnewyork.us/Transportation/Real-Time-Traffic-Speed-Data/xsat-x5sa)
 which is maintained by New York City's Department of Transportation (NYCDOT)
 Traffic Management Center (TMC). To learn more about where we found the data,
 just follow the previous link.
